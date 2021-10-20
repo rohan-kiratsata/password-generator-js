@@ -1,0 +1,94 @@
+body{
+    font-family: 'Consolas', monospace;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #122;
+    color: #149414;
+    flex-direction: column;
+
+}
+.container{
+    background-color: tra;
+    padding: 20px 20px;
+}
+
+h1{
+    text-align: center;
+}
+.option-item{
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+}
+.genPass-container{
+    
+    height: 60px;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #149414;
+    color: #149414;
+    
+}
+#generated-pass{
+    padding: 10px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: calc(100% - 40px);
+}
+button{
+    height: 50px;
+    width: auto;
+    background-color: transparent;
+    border: 3px #149414 solid;
+    color: #149414;
+    font-family: 'Consolas', monospace;
+}
+button:hover{
+    background-color: #149414;
+    color: #fff;
+    transition: all .5s ease-in-out;
+    /* background-position: left bottom; */
+
+}
+#passLen{
+    background-color: transparent;
+    border: 2px #149414 solid;
+    color: #149414;
+    text-align: center;
+    padding: 8px;
+}
+.option-item input{
+    padding: 10px;
+}
+
+.notes{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    word-wrap: break-word;
+    
+}
+.notes p{
+    padding: 20px;
+}
+.notes a{
+    text-decoration: none;
+    color: #fff;
+}
+.notes a:hover{
+    text-decoration: underline;
+}
+.notes a:visited{
+    color: #fff;
+}
+
+@media screen and (max-width:500px) {
+    .notes{
+        width: 100%;
+    }
+}
