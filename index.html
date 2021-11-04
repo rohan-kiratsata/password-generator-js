@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPTBPTK6CW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VPTBPTK6CW');
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,11 +19,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
-        <link rel="stylesheet" href="cyber.css">
-        <script src="main.js" defer></script>
+    <link rel="stylesheet" href="cyber.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -25,8 +35,8 @@
             <div class="options">
                 <div class="option-item">
                     <label for="">Password Length</label>
-                    <input type="number" name="passLen" id="passLen" min="4" max="64" value="8" /> 
-                    
+                    <input type="number" name="passLen" id="passLen" min="4" max="64" value="8" />
+
                 </div>
                 <div class="option-item">
                     <label for="">Uppercase</label>
@@ -48,38 +58,45 @@
 
             <div class="genPass-container">
                 <span id="generated-pass"></span>
-                
+
             </div>
             <br>
             <span>Password Strength:</span>
             <span id="printS"></span>
-                    <br>
-                    
-                    <br>
+            <br>
+
+            <br>
             <button id="copy-btn">COPY</button>
             <button class="gen-btn" id="generate" type="submit" onclick="passStren()">GENERATE</button>
         </div>
-        
+
     </form>
     <div class="notes">
-        <p style="font-size: large">To prevent your device/accounts from Hacking, brut force attack, dictionary attack or by social engineering, you should notice these points below:
-        <br>
+        <p style="font-size: large">To prevent your device/accounts from Hacking, brut force attack, dictionary attack
+            or by social engineering, you should notice these points below:
+            <br>
         <ol>
             <li>Do not use the same password for all multiple accounts. Keep passwords unqiue for every account.</li>
             <br>
-            <li>Password should be at least 10 Characters, it should contain at least one number, symbols, uppercase and lowercase letters</li>
+            <li>Password should be at least 10 Characters, it should contain at least one number, symbols, uppercase and
+                lowercase letters</li>
             <br>
-            <li>Do not use dictionary word in your passwords. For example: "facebookpassword123", <br> "qwert12345","12345","instapass123",etc. these are the weak password.</li>
+            <li>Do not use dictionary word in your passwords. For example: "facebookpassword123", <br>
+                "qwert12345","12345","instapass123",etc. these are the weak password.</li>
             <br>
-            <li>Do not not save passwords in browser, since passwords stored in browsers and be easily stoled. Instead use password managers like LastPass, 1Password, Dashlane, etc</li>
+            <li>Do not not save passwords in browser, since passwords stored in browsers and be easily stoled. Instead
+                use password managers like LastPass, 1Password, Dashlane, etc</li>
             <br>
-            <li>Do not enter any any sensitive information in public Wi-Fi as hackers can easily stole/hack the password. Best you can do is don't connect to public Wi-Fi.</li>
+            <li>Do not enter any any sensitive information in public Wi-Fi as hackers can easily stole/hack the
+                password. Best you can do is don't connect to public Wi-Fi.</li>
             <br>
-            <li>Do not enter any sensitive information in unencrypted network (e.g. HTTP or FTP) because it can be sniffed easily.</li>
+            <li>Do not enter any sensitive information in unencrypted network (e.g. HTTP or FTP) because it can be
+                sniffed easily.</li>
             <br>
             <li>Turn on the 2-Factor Authentication</li>
             <br>
-            <li>Do not store password in txt File, or any files which can be easily accessed from your computers. Recommended using Trusted Password Managers.</li>
+            <li>Do not store password in txt File, or any files which can be easily accessed from your computers.
+                Recommended using Trusted Password Managers.</li>
             <br>
             <li>Do not click on any suspicious e-mail link.</li>
             <br>
