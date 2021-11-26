@@ -19,26 +19,26 @@ h1{
 }
 .option-item{
     display: flex;
-    padding: 8px;
+    padding: 10px;
     justify-content: space-between;
 }
 .genPass-container{
-    
-    height: 60px;
-    width: 100%;
-    /* background-color: blueviolet; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* ! ISSUE #2: Width is not properly aligned according to content */
+    min-height: 60px;
+    /* max-width: fit-content; */
+    max-width: 100vw;
+    width: 50%;
     border: 2px solid #149414;
     color: #149414;
+    /* word-wrap: break-word; */
+    text-align: left;
+    /* white-space: pre-wrap; */
     
 }
 #generated-pass{
-    padding: 10px;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    max-width: calc(100% - 40px);
+    /* ! ISSUE #1 : Not Working  */
+    /* !Mobile View Not Responsive  */
+   white-space: pre-wrap;
 }
 button{
     height: 50px;
