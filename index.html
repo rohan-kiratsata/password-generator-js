@@ -18,57 +18,46 @@
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
 
-    <link rel="stylesheet" href="cyber.css">
-    <script src="main.js" defer></script>
+    
 </head>
 
 <body>
-    <form action="" id="pass-generator-form">
-        <div class="container">
-            <h1>Strong Password Generator</h1>
-
-            <div class="options">
-                <div class="option-item">
-                    <label for="">Password Length</label>
-                    <input type="number" name="passLen" id="passLen" min="4" max="64" value="8" />
-                </div>
-                <div class="option-item">
-                    <label for="">Uppercase</label>
-                    <input type="checkbox" name="" id="uppercase" checked />
-                </div>
-                
-                <div class="option-item">
-                    <label for="">Numbers</label>
-                    <input type="checkbox" name="" id="numbers" checked />
-                </div>
-                <div class="option-item">
-                    <label for="">Symbols</label>
-                    <input type="checkbox" name="" id="symbols" checked />
-                </div>
-            </div>
-
-            <div class="genPass-container">
-                <span id="generated-pass"></span>
-            </div>
-            <br>
-            <span>Password Strength:</span>
-            <span id="printS"></span>
-            <br>
-
-            <br>
-            <button id="copy-btn">COPY</button>
-            <button class="gen-btn" id="generate" type="submit" onclick="passStren()">GENERATE</button>
+    <div class="container">
+        <!-- Heading -->
+        <h1>Strong Password Generator</h1>
+        <!-- Options -->
+        <div class="option">
+            <label for="">Password Length</label>
+            <input type="number" name="passLen" id="passLen" min="4" max="64" value="8" />
         </div>
 
-    </form>
-    <div class="notes">
+        <div class="option">
+            <label for="">Uppercase</label>
+            <input type="checkbox" name="" id="uppercase" checked />
+        </div>
+
+        <div class="option">
+            <label for="">Numbers</label>
+            <input type="checkbox" name="" id="numbers" checked />
+        </div>
+
+        <div class="option">
+            <label for="">Symbols</label>
+            <input type="checkbox" name="" id="symbols" checked />
+        </div>
+
+        <div class="generate-pass">
+            <input type="text">
+        </div>
+        <!-- <span>Password Strength:</span>
+        <span id="printS"></span>
+        <br>
+
+        <br> -->
+        <button id="copy-btn">COPY</button>
+        <button class="gen-btn" id="generate" type="submit" onclick="passStren()">GENERATE</button>
+    <div class="notes container">
         <p style="font-size: large">To prevent your device/accounts from Hacking, brut force attack, dictionary attack
             or by social engineering, you should notice these points below:
             <br>
@@ -103,6 +92,9 @@
         Project by <a href="https://rohan-kiratsata.github.io">Rohan Kiratsata</a>
         </p>
     </div>
+</div>
+
+<script src="main.js" defer></script>
 </body>
 
 </html>
