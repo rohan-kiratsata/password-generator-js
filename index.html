@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPTBPTK6CW"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-VPTBPTK6CW');
-    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,7 +34,7 @@
                     <label for="">Uppercase</label>
                     <input type="checkbox" name="" id="uppercase" checked />
                 </div>
-                
+
                 <div class="option-item">
                     <label for="">Numbers</label>
                     <input type="checkbox" name="" id="numbers" checked />
@@ -57,52 +48,59 @@
             <div class="genPass-container">
                 <span id="generated-pass"></span>
             </div>
-            <br>
-            <span>Password Strength:</span>
-            <span id="printS"></span>
-            <br>
+            <div class="strength-container">
+                <span>Password Strength:</span>
+                <span id="printS"></span>
+            </div>
+            <div class="buttons-container">
+                <button id="copy-btn" onclick="copyToClipboard()">COPY</button>
+                <button class="gen-btn" id="generate" type="submit" onclick="passStren()">GENERATE</button>
+            </div>
 
-            <br>
-            <button id="copy-btn">COPY</button>
-            <button class="gen-btn" id="generate" type="submit" onclick="passStren()">GENERATE</button>
+            <div class="notes">
+                <p>To prevent your device/accounts from Hacking, brut force attack, dictionary
+                    attack
+                    or by social engineering, you should notice these points below:
+                    <br>
+                <ol>
+                    <li>Do not use the same password for all multiple accounts. Keep passwords unique for every account.
+                    </li>
+                    <br>
+                    <li>Password should be at least 10 Characters, it should contain at least one number, symbols,
+                        uppercase
+                        and
+                        lowercase letters</li>
+                    <br>
+                    <li>Do not use dictionary word in your passwords. For example: "facebookpassword123", <br>
+                        "qwert12345","12345","instapass123",etc. these are the weak password.</li>
+                    <br>
+                    <li>Do not not save passwords in browser, since passwords stored in browsers and be easily stolen.
+                        Instead
+                        use password managers like LastPass, 1Password, Dashlane, etc</li>
+                    <br>
+                    <li>Do not enter any any sensitive information in public Wi-Fi as hackers can easily stole/hack the
+                        password. Best you can do is don't connect to public Wi-Fi.</li>
+                    <br>
+                    <li>Do not enter any sensitive information in unencrypted network (e.g. HTTP or FTP) because it can
+                        be
+                        sniffed easily.</li>
+                    <br>
+                    <li>Turn on the 2-Factor Authentication</li>
+                    <br>
+                    <li>Do not store password in txt File, or any files which can be easily accessed from your
+                        computers.
+                        Recommended using Trusted Password Managers.</li>
+                    <br>
+                    <li>Do not click on any suspicious e-mail link.</li>
+                    <br>
+                    <li>Use the Ad-Blocker in browser, because some ads can also contain viruses and malware.</li>
+                </ol>
+                <br>
+                Project by <a href="https://rohan-kiratsata.github.io">Rohan Kiratsata</a>
+                </p>
+            </div>
         </div>
-
     </form>
-    <div class="notes">
-        <p style="font-size: large">To prevent your device/accounts from Hacking, brut force attack, dictionary attack
-            or by social engineering, you should notice these points below:
-            <br>
-        <ol>
-            <li>Do not use the same password for all multiple accounts. Keep passwords unique for every account.</li>
-            <br>
-            <li>Password should be at least 10 Characters, it should contain at least one number, symbols, uppercase and
-                lowercase letters</li>
-            <br>
-            <li>Do not use dictionary word in your passwords. For example: "facebookpassword123", <br>
-                "qwert12345","12345","instapass123",etc. these are the weak password.</li>
-            <br>
-            <li>Do not not save passwords in browser, since passwords stored in browsers and be easily stolen. Instead
-                use password managers like LastPass, 1Password, Dashlane, etc</li>
-            <br>
-            <li>Do not enter any any sensitive information in public Wi-Fi as hackers can easily stole/hack the
-                password. Best you can do is don't connect to public Wi-Fi.</li>
-            <br>
-            <li>Do not enter any sensitive information in unencrypted network (e.g. HTTP or FTP) because it can be
-                sniffed easily.</li>
-            <br>
-            <li>Turn on the 2-Factor Authentication</li>
-            <br>
-            <li>Do not store password in txt File, or any files which can be easily accessed from your computers.
-                Recommended using Trusted Password Managers.</li>
-            <br>
-            <li>Do not click on any suspicious e-mail link.</li>
-            <br>
-            <li>Use the Ad-Blocker in browser, because some ads can also contain viruses and malware.</li>
-        </ol>
-        <br>
-        Project by <a href="https://rohan-kiratsata.github.io">Rohan Kiratsata</a>
-        </p>
-    </div>
 </body>
 
 </html>
